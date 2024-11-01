@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - LOS INGENIEROS</title>
+    <link rel="stylesheet" href="dupla.css"> <!-- Asegúrate de crear este archivo CSS -->
+    <script>
+        function mostrarGaleria() {
+            document.getElementById('galeria').style.display = 'flex'; // Muestra la galería
+            document.getElementById('videos').style.display = 'flex'; // Muestra la galería de videos
+            document.getElementById('boton').style.display = 'none'; // Oculta el botón
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>LOS INGENIEROS</h1>
+        <p>LA PLEBADA</p>
+        <button id="boton" class="btn-presionar" onclick="mostrarGaleria()">PRESIONAME BB</button> <!-- Botón que llama a la función -->
+    </header>
+
+    <main>
+        <section id="galeria" class="gallery" style="display: none;"> <!-- Oculta la galería inicialmente -->
+            <h2>EL BAUL DE LOS RECUERDOS</h2>
+            <figure>
+                <img src="amigos.jpeg" alt="Descripción de la foto 1">
+                <figcaption>LA DUPLA</figcaption>
+            </figure>
+            <figure>
+                <img src="1.jpeg" alt="Descripción de la foto 2">
+                <figcaption>IVANCITO VV Y LEY</figcaption>
+            </figure>
+            <figure>
+                <img src="2.jpeg" alt="Descripción de la foto 3">
+                <figcaption>EL FLACOW</figcaption>
+            </figure>
+            <figure>
+                <img src="3.jpeg" alt="Descripción de la foto 4">
+                <figcaption>MONSESITA Y 3 MAS</figcaption>
+            </figure>
+            <figure>
+                <img src="4.jpeg" alt="Descripción de la foto 5">
+                <figcaption>EL SEÑOR</figcaption>
+            </figure>
+            <figure>
+                <img src="5.jpeg" alt="Descripción de la foto 6">
+                <figcaption>MURILLO</figcaption>
+            </figure>
+        </section>
+
+        <section id="videos" class="video-gallery" style="display: none;"> <!-- Oculta la sección de videos inicialmente -->
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <figcaption>ME DUELE VERTE ASI</figcaption>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;CHUPENME EL MION.</p>
+    </footer>
+</body>
+</html>

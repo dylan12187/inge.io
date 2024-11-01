@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Fondo en degradado verde y azul */
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    border-bottom: 5px solid #333;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px #333;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.btn-presionar {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #ff5722; /* Color del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio encima del botón */
+    transition: background-color 0.3s;
+}
+
+.btn-presionar:hover {
+    background-color: #e64a19; /* Color del botón al pasar el ratón */
+}
+
+.gallery, .video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes y videos */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+figure {
+    margin: 20px 0; /* Espacio entre las figuras */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 80%; /* Hace que la figura use el 80% del ancho disponible */
+}
+
+figure img {
+    width: 100%; /* Hace que la imagen use el 100% del ancho de la figura */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+video {
+    width: 100%; /* Hace que el video use el 100% del ancho disponible */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0; /* Espacio entre videos */
+}
+
+figcaption {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #333;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Tamaño del título más pequeño en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1.2em; /* Ajuste del tamaño de la descripción */
+    }
+
+    figcaption {
+        font-size: 1em; /* Ajuste del tamaño de la leyenda */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Tamaño del título más pequeño en móviles */
+    }
+
+    p {
+        font-size: 1em; /* Ajuste del tamaño de la descripción */
+    }
+
+    figcaption {
+        font-size: 0.9em; /* Ajuste del tamaño de la leyenda */
+    }
+}
